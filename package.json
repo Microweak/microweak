@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "@types/mustache": "^4.2.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
+    "handlebars": "^4.7.8",
+    "lowdb-crud": "^1.0.5",
+    "marko": "^5.32.6",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "try-to-catch": "^3.0.1",
+    "typeorm": "^0.3.19",
+    "url": "^0.11.3"
+  },
+  "type": "module",
+  "name": "microweak",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "deploy-to-git": "^0.4.1",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "deploy": "deploy-to-git",
+    "dev": "nodemon app.js"
+  },
+  "config": {
+    "deployToGit": {
+        "repository": "git@github.com:Microweak/microweak.git",
+        "branch": "artifacts",
+        "folder": "build",
+        "script": "npm run build-my-app",
+        "commit": "Automatic commit text",
+        "user": {
+            "email": "wibusite@gmail.com",
+            "name": "Microweak"
+        }
+    }
+  }
+  "author": "paukuman",
+  "license": "ISC",
+  "description": ""
+}
