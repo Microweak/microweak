@@ -23,7 +23,7 @@ global.M = M;
 
     const express = await M("express")
     const app = express();
-    app.use( await M( "global_setting" ) )
+    app.use( "*", await M( "global_setting" ) )
     app.all("*", await M( "controller" ))
 
     app.listen( port.http );
