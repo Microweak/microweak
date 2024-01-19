@@ -29,17 +29,17 @@
   },
   "config": {
     "deployToGit": {
-        "repository": "git@github.com:Microweak/microweak.git",
-        "branch": "artifacts",
-        "folder": "build",
-        "script": "npm run build-my-app",
-        "commit": "Automatic commit text",
-        "user": {
-            "email": "wibusite@gmail.com",
-            "name": "Microweak"
-        }
+      "repository": "git@github.com:Microweak/microweak.git",
+      "branch": "artifacts",
+      "folder": "build",
+      "script": "npm run build-my-app",
+      "commit": "Automatic commit text",
+      "user": {
+        "email": "wibusite@gmail.com",
+        "name": "Microweak"
+      }
     }
-  }
+  },
   "author": "paukuman",
   "license": "ISC",
   "description": ""

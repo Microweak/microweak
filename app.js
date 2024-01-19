@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 // First
 global.__dirname = dirname(fileURLToPath(import.meta.url));
 const { M, config: conf } = module;
+global.M = M;
 
 (async function () {
     conf(await (await M("path")).join(__dirname, "plugins"));
@@ -20,8 +21,9 @@ const { M, config: conf } = module;
     const { port } = default_config;
     /* [ End object configuration ] */
 
-    const express = await M("express");
+    const express = await M("express")
     const app = express();
+    app.use( await M( "global_setting" ) )
     app.all("*", await M( "controller" ))
 
     app.listen( port.http );
