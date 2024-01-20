@@ -27,21 +27,8 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "deploy": "deploy-to-git",
+    "push": "sh auto_push.sh",
     "dev": "nodemon app.js"
-  },
-  "config": {
-    "deployToGit": {
-      "repository": "git@github.com:Microweak/microweak.git",
-      "branch": "artifacts",
-      "folder": "build",
-      "script": "npm run build-my-app",
-      "commit": "Automatic commit text",
-      "user": {
-        "email": "wibusite@gmail.com",
-        "name": "Microweak"
-      }
-    }
   },
   "author": "paukuman",
   "license": "ISC",
