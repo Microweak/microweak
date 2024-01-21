@@ -18,7 +18,7 @@ global.M = M;
     });
     const default_config = config.default ? config.default : config;
     const config_keys = Object.keys( default_config );
-    const { port } = default_config;
+    await config_keys.map( e => global[e] = default_config[e] )
     /* [ End object configuration ] */
 
     const express = await M("express")

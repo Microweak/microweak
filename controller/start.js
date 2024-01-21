@@ -1,6 +1,8 @@
 export default async function( req, res, next ) {
   try {
-    res.send( await( await Model( "start" ) )( req, res, next ) )
+    const model_start = await( await Model( "start" ) )( req );
+    const view_start = await View( "start", req );
+    res.send( view_start )
   } catch( e ) {
     throw new Error( e )
   }
