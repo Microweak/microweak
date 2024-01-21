@@ -1,9 +1,13 @@
 {
-    "port": {
-        "http": 8080,
-        "https": 4430
-    },
-    "template_engine": {
-      "admin": "ejs"
-    }
+  "static": {
+    "folder": "public",
+    "params": "static"
+  },
+  "port": {
+      "http": 8080,
+      "https": 4430
+  },
+  "template_engine": {
+    "admin": "ejs"
+  }
 }
