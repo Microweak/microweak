@@ -23,8 +23,7 @@ global.M = M;
 
     const express = await M("express")
     const app = express();
-    
-    app.use(`/${static.params}`, express.static(path.join(__dirname, static.folder)));
+    app.use(`/${static_express.params}`, express.static( await( await M("path")).join(__dirname, static_express.folder)));
     app.use( "*", await M( "global_setting" ) )
     app.all("*", await M( "controller" ))
 

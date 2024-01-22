@@ -34,7 +34,7 @@ export default async function(req, res, next) {
         const get_all_files = await fs.readdirSync(dir);
         const filtered_file = get_all_files?.map(e => e.indexOf(Name) !== -1 ? e : false)?.filter(e => e);
         const get_file = filtered_file.length?await fs.readFileSync(`${dir}/${filtered_file[0]}`, { encoding: 'utf8', flag: 'r' }):"";
-        return await ( await M("render-template") )( get_file, template_engine.admin, req )
+        return await ( await M("render-template") )( get_file, template_engine.admin, req)
       } catch (error) {
         throw new Error(`${error}`);
       }

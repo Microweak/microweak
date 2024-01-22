@@ -4,8 +4,11 @@ export default async function(req, res, next) {
       case "install":
         await (await Controller( "start" ))( req, res, next )
         break;
+        
+      default:
+        await (await Controller( "error" ))( req, res, next )
     }
   } catch ( e ) {
-    throw new Error( e )
+        await (await Controller( "error" ))( req, res, next, e )
   }
 }

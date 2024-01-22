@@ -1,3 +1,3 @@
-export default async function( req, res, next ) {
-  return ""
+export default async function( req, res ) {
+  
 }

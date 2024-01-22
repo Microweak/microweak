@@ -1,5 +1,5 @@
 {
-  "static": {
+  "static_express": {
     "folder": "public",
     "params": "static"
   },
