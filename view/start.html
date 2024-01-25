@@ -2,6 +2,13 @@
 <div class="get-started">
     <form action="/install" method="post">
         
+        <!-- [ Langkah pertama ] -->
+        <p>Select Database you want to use: </p>
+        <div class="options" id="options">
+            <div class="hide-option option" id="hide-option">Select any option.. <i class="fa fa-caret-down"></i></div>
+        </div>
+        <div class="button" id="button">Next</div>
+
     </form>
 </div>
 <%- await include(__dirname + '/view/footer.html'); %>
