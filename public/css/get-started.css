@@ -83,7 +83,7 @@
 }
 
 .option:hover {
-    background-color: brown;
+    background-color: #3f51b5;
     color: white;
 }
 
@@ -95,10 +95,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(184, 255, 112);
-    color: #212121;
+    background-color: #3f51b5;
+    color: #fff;
     font-weight: 600;
-    box-shadow: 2px 4px 8px rgba(45, 87, 5, 0.247);
+    box-shadow: 2px 4px 8px #3f51b5;
 }
 
 .message {
@@ -114,7 +114,7 @@
 }
 
 .message.success {
-    background-color: rgb(184, 255, 112);
+    background-color: greenyellow;
 }
 
 .message.danger {

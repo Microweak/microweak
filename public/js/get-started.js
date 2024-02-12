@@ -1,5 +1,5 @@
 let options = document.getElementById("options");
-let optionList = ["San Francisco", "Los Angeles", "New York", "Las Vegas", "Miami", "Houston", "Seattle"];
+let optionList = ["MySQL", "MariaDB", "Postgres", "CockroachDB", "SQLite", "Microsoft SQL Server", "Oracle","Sql.js","LowDB","NeDB"];
 
 let button = document.getElementById("button");
 
